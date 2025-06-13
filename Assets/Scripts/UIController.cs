@@ -7,22 +7,43 @@ public class UIController : MonoBehaviour
 {
     public UIDocument settingsMenu;
     public UIDocument chatMenu;
+    public UIDocument chatShortcut;
+    public UIDocument settingsShortcut;
     private VisualElement settingsMenuRoot;
     private VisualElement chatMenuRoot;
     private Button settingsExitButton;
     private Button chatExitButton;
+    private VisualElement chatIconRoot;
+    private VisualElement settingsIconRoot;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         settingsMenuRoot = settingsMenu.rootVisualElement;
         chatMenuRoot = chatMenu.rootVisualElement;
+        chatIconRoot = chatShortcut.rootVisualElement;
+        settingsIconRoot = settingsShortcut.rootVisualElement;
 
         settingsExitButton = settingsMenuRoot.Q<Button>("ExitButton");
         chatExitButton = chatMenuRoot.Q<Button>("ExitButton");
 
+        chatIconRoot = chatShortcut.rootVisualElement.Q<VisualElement>("ShortcutContainer");
+        settingsIconRoot = settingsShortcut.rootVisualElement.Q<VisualElement>("ShortcutContainer");
+
         settingsExitButton.clicked += () => CloseMenu(settingsMenuRoot);
         chatExitButton.clicked += () => CloseMenu(chatMenuRoot);
+
+        chatIconRoot.pickingMode = PickingMode.Position;
+        chatIconRoot.RegisterCallback<ClickEvent>(evt =>
+        {
+            OpenMenu(chatMenuRoot);
+        });
+
+        settingsIconRoot.pickingMode = PickingMode.Position;
+        settingsIconRoot.RegisterCallback<ClickEvent>(evt =>
+        {
+            OpenMenu(settingsMenuRoot);
+        });
 
         //Test Add Text
         string[] messages = {"This is an example text message", "There is another message right here bitch"};
@@ -32,6 +53,11 @@ public class UIController : MonoBehaviour
     private void CloseMenu(VisualElement menu)
     {
         menu.style.display = DisplayStyle.None;
+    }
+
+    private void OpenMenu(VisualElement menu)
+    {
+        menu.style.display = DisplayStyle.Flex;
     }
 
     private void AddMessagesToChat(string[] messages)

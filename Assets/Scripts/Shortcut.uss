@@ -1,0 +1,38 @@
+:root {
+}
+
+.shortcut-container {
+    width: 45px;
+    height: 45px;
+    max-height: 45px;
+    z-index: 0;
+    left: 10px;
+}
+
+.shortcut-icon {
+}
+
+.shortcut-label {
+    font-size: 10px;
+    -unity-text-align: middle-center;
+    margin: none;
+    padding: 0;
+}
+
+.settings-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.settings-label {
+    position: absolute;
+    bottom: 0;
+}
+
+.settings-container {
+    top: 60px;
+}
+
+.chatshortcut-container {
+    top: 10px;
+}

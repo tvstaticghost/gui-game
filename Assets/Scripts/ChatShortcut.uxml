@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Shortcut.uss?fileID=7433441132597879392&amp;guid=43478a18fd2ac7449a423075c2dae1bc&amp;type=3#Shortcut" />
+    <ui:VisualElement name="ShortcutContainer" class="shortcut-container chatshortcut-container" style="flex-grow: 1; position: absolute;">
+        <ui:VisualElement name="ShortcutIcon" class="shortcut-icon" style="flex-grow: 1; background-image: resource(&apos;Images/chat&apos;);" />
+        <ui:Label text="Clan Chat" name="ShortcutLabel" class="shortcut-label" />
+    </ui:VisualElement>
+</ui:UXML>
