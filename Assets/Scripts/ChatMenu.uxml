@@ -1,0 +1,38 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/SettingsMenu.uss?fileID=7433441132597879392&amp;guid=a61d59b1c87704247a182ccf59ed5027&amp;type=3#SettingsMenu" />
+    <ui:VisualElement name="ChatMenuContainer" class="chat-container rounded-corners" style="flex-grow: 1; position: absolute;">
+        <ui:VisualElement name="OptionBar" class="option-bar rounded-bar" style="flex-grow: 1;">
+            <ui:Label text="Clan Chat" name="ChatLabel" class="settings-label" style="margin-left: 12px; margin-top: 1px;" />
+            <ui:VisualElement name="ButtonContainer" class="button-container" style="flex-grow: 1;">
+                <ui:Button name="ExitButton" class="button" />
+                <ui:Button name="MinimizeButton" class="button" />
+                <ui:Button name="ExpandButton" class="button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ChatMenuBody" class="chat-menu-body" style="flex-grow: 1;">
+            <ui:VisualElement name="ChatMenuNames" class="chat-menu-names" style="flex-grow: 1;">
+                <ui:VisualElement name="FirstPerson" class="chat-person" style="flex-grow: 1;">
+                    <ui:VisualElement name="FirstProfileIcon" class="profile-image" style="background-image: resource(&apos;Images/profile_placeholder&apos;);" />
+                    <ui:Label text="Sofia DiPaolo" name="FirstPersonLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement name="SecondPerson" class="chat-person" style="flex-grow: 1;">
+                    <ui:VisualElement name="SecondProfileIcon" class="profile-image" style="flex-grow: 1; background-image: resource(&apos;Images/profile_placeholder&apos;);" />
+                    <ui:Label text="Otto DiPaolo" name="SecondPersonLabel" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ThirdPerson" class="chat-person" style="flex-grow: 1;">
+                    <ui:VisualElement name="ThirdProfileIcon" class="profile-image" style="flex-grow: 1; background-image: resource(&apos;Images/profile_placeholder&apos;);" />
+                    <ui:Label text="Archer Arnold" name="ThirdPersonLabel" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ChatMenuMessages" class="chat-menu-messages" style="flex-grow: 1;">
+                <ui:VisualElement name="MessageContainer" class="message-container" style="flex-grow: 1;">
+                    <ui:Label text="This is a test message that is supposed to be kinda long" name="Message" class="chat-message" />
+                </ui:VisualElement>
+                <ui:VisualElement name="SendBarContainer" class="send-bar-container" style="flex-grow: 1;">
+                    <ui:TextField name="SendBar" class="send-bar" />
+                    <ui:Button name="SendButton" class="send-button" style="background-image: resource(&apos;Images/send&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,167 @@
+:root {
+}
+
+.rounded-corners {
+    border-radius: 7px;
+}
+
+.rounded-bar {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.settings-container {
+    width: 400px;
+    height: 250px;
+    max-height: 250px;
+    background-color: rgb(195, 195, 195);
+    display: flex;
+    flex-direction: column;
+}
+
+.option-bar {
+    max-height: 27px;
+    background-color: rgb(177, 167, 167);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button {
+    width: 15px;
+    height: 15px;
+    min-width: 8px;
+    min-height: 8px;
+    max-width: 15px;
+    max-height: 15px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 3px;
+    border: none;
+    flex-shrink: 0;
+}
+
+#ExitButton {
+    background-color: rgb(230, 93, 93);
+}
+
+#MinimizeButton {
+    background-color: rgb(240, 237, 54);
+}
+
+#ExpandButton {
+    background-color: rgb(151, 235, 118);
+}
+
+.settings-label {
+    font-size: 15px;
+    -unity-font-style: bold;
+    padding-right: 10px;
+    -unity-text-align: center;
+}
+
+.chat-container {
+    width: 700px;
+    height: 450px;
+    background-color: rgb(195, 195, 195);
+    right: 20px;
+    top: 100px;
+}
+
+.chat-menu-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-menu-names {
+    width: 35%;
+    background-color: rgb(177, 167, 167);
+    align-items: center;
+}
+
+.chat-menu-messages {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-person {
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(195, 195, 195);
+    width: 95%;
+    margin-bottom: 5px;
+}
+
+.profile-image {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 10px;
+    max-width: 25px;
+}
+
+.chat-box {
+    align-items: flex-start;
+    max-width: 80%;
+    background-color: dodgerblue;
+}
+
+
+.chat-message {
+    white-space: normal;
+    word-break: break-word;
+    overflow: visible;
+    background-color: dodgerblue;
+    margin: 7px;
+    max-width: 80%;
+    padding-left: 10px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;             /* only if you want this body to expand in scroll area */
+    overflow-y: auto;
+}
+
+.send-bar-container {
+    max-height: 50px;
+    background-color: rgb(177, 167, 167);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.send-bar {
+    width: 87%;
+    background-color: rgb(195, 195, 195);
+    border-radius: 12px;
+}
+
+#unity-text-input {
+    background-color: rgb(195, 195, 195);
+    border-radius: 12px;
+}
+
+.send-button {
+    width: 39px;
+    height: 39px;
+
+    border-radius: 50%;
+
+    background-size: 20px 20px;   /* sets width and height of background */
+    background-repeat: no-repeat;
+    background-position: center
+}

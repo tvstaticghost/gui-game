@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/SettingsMenu.uss?fileID=7433441132597879392&amp;guid=a61d59b1c87704247a182ccf59ed5027&amp;type=3#SettingsMenu" />
+    <ui:VisualElement name="SettingsMenuContainer" class="settings-container rounded-corners" style="flex-grow: 1; position: absolute;">
+        <ui:VisualElement name="OptionBar" class="option-bar rounded-bar" style="flex-grow: 1;">
+            <ui:Label text="Settings" name="Settings" class="settings-label" style="margin-left: 10px; margin-top: 1px;" />
+            <ui:VisualElement name="ButtonContainer" class="button-container" style="flex-grow: 1;">
+                <ui:Button name="ExitButton" class="button" style="min-width: 2px;" />
+                <ui:Button name="MinimizeButton" class="button" />
+                <ui:Button name="ExpandButton" class="button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
